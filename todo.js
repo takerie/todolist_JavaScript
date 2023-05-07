@@ -48,7 +48,7 @@ function addTask() {
     });
 
     //  削除効果音の定義
-    const sound = new Audio('audio/del_btn.mp3');
+    const sound = new Audio('del_btn.mp3');
 
     //  削除ボタンクリックでタスク削除&効果音を鳴らす
     deleteButton.addEventListener('click', function(e){
