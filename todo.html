@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>やることリスト</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1 id="header">やることリスト</h1>
+        <h4 class="note">※注意※ タスク追加・タスク削除時に音が鳴ります♪</h4>
+        <div id="input-wrap">
+            <!--入力を促すコメント付の入力欄。入力された文字列を'task-name'とする-->
+            <input type="text" id="task-name" placeholder="新しいタスクを入力してください" />
+            <!--ボタンを押すとタスク追加&効果音が鳴る-->
+            <button onclick="addTask(); audio();">↓ リストにタスクを追加 ↓</button>
+            <audio id="btn_audio">
+                <source src="audio/add_btn.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <div id="main-wrap">
+            <h4>現在のやること</h4>
+            <form>
+                <ul id="todo-list"></ul>
+            </form>
+        </div>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>
