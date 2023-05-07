@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+/*全体*/
+body {
+  font-family: sans-serif;
+}
+
+.wrapper{
+  max-width: 600px;
+  /* ページの中央に揃える */
+  margin: 0 auto;
+  color: #333631;
+}
+#header {
+  text-align: left;
+  font-size: 24px;
+  width: 100%;
+  margin: 20px 0;
+}
+.note {
+    text-align: right;
+    color: #00958D;
+}
+
+/* 入力 */
+#input-wrap {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+#input-wrap input{
+  width: 450px;
+  height: 30px;
+  margin-bottom: 15px;
+}
+
+/* リスト */
+#main-wrap {
+  text-align: center;
+  margin: 0 auto;
+  width: 500px;
+  min-height: 120px;
+  border: 1px solid #008A83;
+  padding: 3px 30px;
+  background-color: #EBF6F5;
+}
+
+#main-wrap ul {
+  padding-inline-start: 0
+}
+
+#main-wrap li {
+  text-align: left;
+  list-style-type: none;
+  border-bottom: 1px dashed #008A83;
+  padding: 10px 0;
+  display: flex;
+  line-height: 20px;
+}
+
+#main-wrap p {
+  width: 350px;
+}
+
+/* 完了ボタン押下時に取消線を引く */
+#main-wrap p.line-through {
+  text-decoration: line-through;
+}
+
+/*ボタン*/
+button{
+  height: 32px;
+  /* ボタン上でカーソルの見た目が変わる */
+  cursor: pointer;
+  background: #53A8A6;
+  color: #fff;
+  border: 1px solid #008A83;
+  font-size: 1rem;
+  padding: 2px 15px;
+  margin-bottom: 15px;
+}
+
+button:hover{
+  background-color: #27ACA9;
+  border-color: #27ACA9;
+}
+button.disabled {
+  background-color: #27ACA9;
+  border-color: #27ACA9;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.end-button, .delete-button {
+  margin: 20px 2px;
+  padding: 2px 15px;
+}
+
+/* 完了ボタンと削除ボタンの間 */
+.end-button {
+  margin-right: 10px;
+}
